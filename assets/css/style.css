@@ -299,6 +299,7 @@ div#expensesHeader {
   top: -55px;
   width: 72px;
   text-align: center;
+  z-index: 1;
 }
 
 .day-expenses {
@@ -356,6 +357,12 @@ div#expensesHeader {
   .day-expenses {
     width: auto;
   }
+
+  .day-amount {
+  padding: 9px 5px;
+  left: -13px;
+  width: 60px;
+}
 
    div#expensesHeader {
     padding: 25px;
