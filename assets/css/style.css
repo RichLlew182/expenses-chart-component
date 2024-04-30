@@ -34,6 +34,8 @@ button {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 img,
@@ -68,3 +70,21 @@ h6 {
 }
 
 /* Variables */
+
+/* Utility classes */
+
+/* Custom Overrides */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
