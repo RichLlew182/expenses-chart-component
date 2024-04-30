@@ -11,6 +11,12 @@ const dayExpenses = document.querySelectorAll('.day-expenses');
 
 console.log(today)
 
+for (let i = 0; i < daysOfWeek.length; i++) {
+  if (today === days[i].id) {
+    dayExpenses[i].classList.add('active')
+  }
+}
+
 
 
 function fetchData() {
