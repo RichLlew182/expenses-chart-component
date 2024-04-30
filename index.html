@@ -21,26 +21,40 @@
 
 <body class="bg-cream">
 
-  <main>
-    <section class="container">
-      My balance
-      $921.48
+  <main class="flex flex-col">
+    <section class="container" id="expenses">
+      <div id="expensesHeader" class="bg-soft-red color-white">
+        <p>My balance</p>
+        <h3 class="fw-bold">$921.48</h3>
+      </div>
 
-      Spending - Last 7 days
+      <div id="expensesBody" class="bg-white">
+        <h3 class="fw-bold">
+          Spending - Last 7 days
 
-      mon
-      tue
-      wed
-      thu
-      fri
-      sat
-      sun
+        </h3>
+        <div id="expenses-chart" class="flex flex-row">
+          mon
+          tue
+          wed
+          thu
+          fri
+          sat
+          sun
+        </div>
 
-      Total this month
-      $478.33
+        <div class="flex flex-row">
+          <div>
+            <p>Total this month</p>
+            <h2 class="fw-bold"> $478.33</h2>
+          </div>
+          <div>
 
-      +2.4%
-      from last month
+            <p class="fw-bold">+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
