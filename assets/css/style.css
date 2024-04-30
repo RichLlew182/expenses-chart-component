@@ -76,7 +76,9 @@ h6 {
 :root {
 
   --softRed: hsl(10, 79%, 65%);
+  --softRedActive: hsl(10, 79%, 75%);
   --cyan: hsl(186, 34%, 60%);
+  --cyanActive: hsl(186, 34%, 83%);
   --darkBrown: hsl(25, 47%, 15%);
   --mediumBrown: hsl(28, 10%, 53%);
   --cream: hsl(27, 66%, 92%);
@@ -175,6 +177,12 @@ h6 {
   justify-content: space-between;
 }
 
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .items-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -201,12 +209,16 @@ h6 {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
 
-.container {
-  margin: auto;
+.pt-35 {
+  padding-top: 35px;
 }
 
 .pd-40 {
@@ -232,7 +244,8 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 15px
+  padding: 15px;
+  width: 100%
 }
 
 footer a {
@@ -245,6 +258,7 @@ main {
 
 #expenses {
   row-gap: 24px;
+  margin: 50px auto;
 }
 
 #expenses-chart {
@@ -255,10 +269,21 @@ main {
 .day-expenses {
   width: 50px;
   background-color: var(--softRed);
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.day-expenses:hover {
+  background-color: var(--softRedActive);
 }
 
 .day-expenses.active {
   background-color: var(--cyan);
+}
+
+.day-expenses.active:hover {
+  background-color: var(--cyanActive);
 }
 
 #monday .day-expenses {
