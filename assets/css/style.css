@@ -229,6 +229,14 @@ h6 {
   padding-bottom: 40px;
 }
 
+.hidden {
+  display: none;
+}
+
+.day:hover .hidden {
+  display: block;
+}
+
 /* Custom Overrides */
 
 body {
@@ -262,12 +270,32 @@ main {
 }
 
 #expenses-chart {
-  height: 265px;
+  height: 280px;
   border-bottom: 1px solid var(--cream);
+  position: relative;
+  -webkit-column-gap: 18px;
+  -moz-column-gap: 18px;
+  column-gap: 18px;
+}
+
+.day {
+  position: relative;
+  width: auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+}
+
+.day-amount {
+  padding: 9px 8px;
+  position: absolute;
+  left: -11px;
+  top: -55px;
+  width: 72px;
+  text-align: center;
 }
 
 .day-expenses {
-  width: 50px;
   background-color: var(--softRed);
   -webkit-transition: ease .3s;
   -o-transition: ease .3s;
@@ -345,12 +373,6 @@ main {
 
   .container {
     width: 340px;
-  }
-
-  .day {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
   }
 
   .day-expenses {
