@@ -357,6 +357,10 @@ div#expensesHeader {
     width: auto;
   }
 
+   div#expensesHeader {
+    padding: 25px;
+}
+
   #expenses-chart {
     -webkit-column-gap: 12px;
     -moz-column-gap: 12px;
