@@ -359,7 +359,7 @@ div#expensesHeader {
 
    div#expensesHeader {
     padding: 25px;
-}
+  }
 
   #expenses-chart {
     -webkit-column-gap: 12px;
