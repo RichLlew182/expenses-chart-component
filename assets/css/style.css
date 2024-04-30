@@ -131,18 +131,56 @@ h6 {
   color: var(--paleOrange)
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
+.container {
+  margin: auto;
+}
+
 /* Custom Overrides */
 
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px
 }
+
+footer a {
+  color: var(--softRed)
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* Media Queries */
+
+@media (max-width : 767px) {
+
+  .container {
+    width: 340px;
+  }
+
+}
+
+@media (min-width : 768px) {
+
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width : 992px) {}
+
+@media (min-width : 1200px) {}
