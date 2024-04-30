@@ -14,6 +14,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Continued development](#continued-development)
 - [Author](#author)
 
+
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
@@ -30,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./assets/images/screenshot.png)
 
 ### Links
 
