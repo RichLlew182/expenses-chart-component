@@ -1,5 +1,8 @@
 console.log('Hello World!')
 
+const days = document.querySelectorAll('.day');
+const dayAmounts = document.querySelectorAll('.day-amount')
+
 fetch('data.json')
   .then(response => {
     if (!response.ok) {
@@ -10,9 +13,12 @@ fetch('data.json')
   .then(data => {
     console.log(data);
 
-    
+    for (let i = 0; i < days.length; i++) {
+      if (days[i].id === data[i].day) {
+        dayAmounts[i].innerText = '$' + data[i].amount
+      }
+    }
 
-    
 
   })
   .catch(error => {
