@@ -8,16 +8,11 @@ const dayExpenses = document.querySelectorAll('.day-expenses');
   const dayIndex = currentDate.getDay();
   let today = daysOfWeek[dayIndex];
 
-
-console.log(today)
-
 for (let i = 0; i < daysOfWeek.length; i++) {
   if (today === days[i].id) {
     dayExpenses[i].classList.add('active')
   }
 }
-
-
 
 function fetchData() {
   fetch('data.json')
@@ -28,13 +23,8 @@ function fetchData() {
       return response.json();
     })
     .then(data => {
-      console.log(data);
 
       for (let i = 0; i < days.length; i++) {
-
-        if (today === data[i].day) {
-          console.log('Today is ' + data[i].day)
-        }
 
         if (days[i].id === data[i].day) {
           dayAmounts[i].innerText = '$' + data[i].amount;
