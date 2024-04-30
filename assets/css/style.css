@@ -258,7 +258,7 @@ main {
 
 #expenses {
   row-gap: 24px;
-  margin: 50px auto;
+  margin: auto;
 }
 
 #expenses-chart {
