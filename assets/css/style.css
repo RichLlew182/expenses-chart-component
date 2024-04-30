@@ -71,7 +71,65 @@ h6 {
 
 /* Variables */
 
+:root {
+
+  --softRed: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --darkBrown: hsl(25, 47%, 15%);
+  --mediumBrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --paleOrange: hsl(33, 100%, 98%);
+}
+
 /* Utility classes */
+
+.bg-soft-red {
+  background-color: var(--softRed);
+}
+
+.color-soft-red {
+  color: var(--softRed)
+}
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.color-cyan {
+  color: var(--cyan)
+}
+
+.bg-dark-brown {
+  background-color: var(--darkBrown);
+}
+
+.color-dark-brown {
+  color: var(--darkBrown)
+}
+
+.bg-medium-brown {
+  background-color: var(--mediumBrown);
+}
+
+.color-medium-brown {
+  color: var(--mediumBrown)
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.color-cream {
+  color: var(--cream)
+}
+
+.bg-pale-orange {
+  background-color: var(--paleOrange);
+}
+
+.color-pale-orange {
+  color: var(--paleOrange)
+}
 
 /* Custom Overrides */
 
