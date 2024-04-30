@@ -300,6 +300,7 @@ main {
   -webkit-transition: ease .3s;
   -o-transition: ease .3s;
   transition: ease .3s;
+  height: 0;
 }
 
 .day-expenses:hover {
@@ -313,35 +314,6 @@ main {
 .day-expenses.active:hover {
   background-color: var(--cyanActive);
 }
-
-#monday .day-expenses {
-  height: 50px;
-}
-
-#tuesday .day-expenses {
-  height: 100px;
-}
-
-#wednesday .day-expenses {
-  height: 150px;
-}
-
-#thursday .day-expenses {
-  height: 90px;
-}
-
-#friday .day-expenses {
-  height: 65px;
-}
-
-#saturday .day-expenses {
-  height: 125px;
-}
-
-#sunday .day-expenses {
-  height: 72px;
-}
-
 
 /* Media Queries */
 
