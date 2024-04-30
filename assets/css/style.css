@@ -201,8 +201,20 @@ h6 {
   text-align: center;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .container {
   margin: auto;
+}
+
+.pd-40 {
+  padding: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
 }
 
 /* Custom Overrides */
@@ -231,8 +243,16 @@ main {
   min-height: 100vh;
 }
 
+#expenses {
+  row-gap: 24px;
+}
+
+#expenses-chart {
+  height: 265px;
+  border-bottom: 1px solid var(--cream);
+}
+
 .day-expenses {
-  height: 150px;
   width: 50px;
   background-color: var(--softRed);
 }
@@ -240,6 +260,35 @@ main {
 .day-expenses.active {
   background-color: var(--cyan);
 }
+
+#monday .day-expenses {
+  height: 50px;
+}
+
+#tuesday .day-expenses {
+  height: 100px;
+}
+
+#wednesday .day-expenses {
+  height: 150px;
+}
+
+#thursday .day-expenses {
+  height: 90px;
+}
+
+#friday .day-expenses {
+  height: 65px;
+}
+
+#saturday .day-expenses {
+  height: 125px;
+}
+
+#sunday .day-expenses {
+  height: 72px;
+}
+
 
 /* Media Queries */
 
