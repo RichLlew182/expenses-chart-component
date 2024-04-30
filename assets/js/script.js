@@ -2,11 +2,10 @@ const days = document.querySelectorAll('.day');
 const dayAmounts = document.querySelectorAll('.day-amount');
 const dayExpenses = document.querySelectorAll('.day-expenses');
 
-
-  const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  const currentDate = new Date();
-  const dayIndex = currentDate.getDay();
-  let today = daysOfWeek[dayIndex];
+const daysOfWeek = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+const currentDate = new Date();
+const dayIndex = currentDate.getDay();
+let today = daysOfWeek[dayIndex];
 
 for (let i = 0; i < daysOfWeek.length; i++) {
   if (today === days[i].id) {
