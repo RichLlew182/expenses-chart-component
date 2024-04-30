@@ -359,9 +359,10 @@ div#expensesHeader {
   }
 
   .day-amount {
-  padding: 9px 5px;
+  padding: 5px;
   left: -13px;
   width: 60px;
+  top: -45px;
 }
 
    div#expensesHeader {
