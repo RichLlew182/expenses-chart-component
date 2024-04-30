@@ -10,35 +10,97 @@
 
 
   <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="bg-cream">
 
-  My balance
-  $921.48
+  <main class="flex flex-col">
+    <section class="container flex flex-col " id="expenses">
+      <div id="expensesHeader"
+        class="flex flex-row justify-between items-center bg-soft-red color-pale-orange br-20 pd-40">
+        <div>
+          <p>My balance</p>
+          <h3 class="fw-bold fs-large">$921.48</h3>
+        </div>
+        <div class="icon">
+          <img src="./assets/images/logo.svg" alt="balance-icon" width="70" height="47">
+        </div>
+      </div>
 
-  Spending - Last 7 days
+      <div id="expensesBody" class="bg-pale-orange br-20 pd-40">
+        <h3 class="fw-bold color-dark-brown fs-large mb-15">
+          Spending - Last 7 days
+        </h3>
+        <div id="expenses-chart" class="flex flex-row justify-between items-end pb-40">
+          <div class="day" id="monday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$17.45</div>
+            <div data-amount="17.45" class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">mon</div>
+          </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+          <div class="day" id="tuesday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$34.91</div>
+            <div data-amount="34.91" class="day-expenses  br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">tue</div>
+          </div>
 
-  Total this month
-  $478.33
+          <div class="day" id="wednesday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$52.36</div>
+            <div data-amount="52.36" class="day-expenses br-5 mb-15 active"></div>
+            <div class="day-title color-medium-brown fs-small text-center">wed</div>
+          </div>
 
-  +2.4%
-  from last month
+          <div class="day" id="thursday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$31.07</div>
+            <div data-amount="31.07" class="day-expenses  br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">thu</div>
+          </div>
 
-  <div class="attribution">
+          <div class="day" id="friday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$23.39</div>
+            <div data-amount="23.39" class="day-expenses  br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">fri</div>
+          </div>
+
+          <div class="day" id="saturday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$43.28</div>
+            <div data-amount="43.28" class="day-expenses  br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">sat</div>
+          </div>
+
+          <div class="day" id="sunday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$25.48</div>
+            <div data-amount="25.48" class="day-expenses  br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">sun</div>
+          </div>
+        </div>
+
+        <div id="expensesTotal" class="flex flex-row justify-between items-center pt-35">
+          <div>
+            <p class="color-medium-brown">Total this month</p>
+            <h2 class="fw-bold fs-x-large color-dark-brown"> $478.33</h2>
+          </div>
+          <div class="text-right">
+
+            <p class="fw-bold color-dark-brown">+2.4%</p>
+            <p class="color-medium-brown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/RichLlew182" target="_blank">Richard Llewellyn</a>.
+  </footer>
 
   <script src="./assets/js/script.js"></script>
 

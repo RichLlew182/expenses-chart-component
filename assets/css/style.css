@@ -14,6 +14,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-weight: normal;
 }
 
 a {
@@ -34,6 +35,8 @@ button {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 img,
@@ -60,6 +63,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-weight: normal;
 }
 
 #root,
@@ -68,3 +72,324 @@ h6 {
 }
 
 /* Variables */
+
+:root {
+
+  --softRed: hsl(10, 79%, 65%);
+  --softRedActive: hsl(10, 79%, 75%);
+  --cyan: hsl(186, 34%, 60%);
+  --cyanActive: hsl(186, 34%, 83%);
+  --darkBrown: hsl(25, 47%, 15%);
+  --mediumBrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --paleOrange: hsl(33, 100%, 98%);
+}
+
+/* Utility classes */
+
+.bg-soft-red {
+  background-color: var(--softRed);
+}
+
+.color-soft-red {
+  color: var(--softRed)
+}
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.color-cyan {
+  color: var(--cyan)
+}
+
+.bg-dark-brown {
+  background-color: var(--darkBrown);
+}
+
+.color-dark-brown {
+  color: var(--darkBrown)
+}
+
+.bg-medium-brown {
+  background-color: var(--mediumBrown);
+}
+
+.color-medium-brown {
+  color: var(--mediumBrown)
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.color-cream {
+  color: var(--cream)
+}
+
+.bg-pale-orange {
+  background-color: var(--paleOrange);
+}
+
+.color-pale-orange {
+  color: var(--paleOrange)
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.fs-small {
+  font-size: 14px;
+}
+
+.fs-large {
+  font-size: 32px;
+}
+
+.fs-x-large {
+  font-size: 48px;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.pt-35 {
+  padding-top: 35px;
+}
+
+.pd-40 {
+  padding: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.day:hover .hidden {
+  display: block;
+}
+
+/* Custom Overrides */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  width: 100%
+}
+
+footer a {
+  color: var(--softRed)
+}
+
+main {
+  min-height: 100vh;
+}
+
+#expenses {
+  row-gap: 24px;
+  margin: auto;
+}
+
+#expenses-chart {
+  height: 280px;
+  border-bottom: 1px solid var(--cream);
+  position: relative;
+  -webkit-column-gap: 18px;
+  -moz-column-gap: 18px;
+  column-gap: 18px;
+}
+
+.day {
+  position: relative;
+  width: auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+}
+
+.day-amount {
+  padding: 9px 5px;
+  position: absolute;
+  left: -11px;
+  top: -55px;
+  width: 72px;
+  text-align: center;
+}
+
+.day-expenses {
+  background-color: var(--softRed);
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.day-expenses:hover {
+  background-color: var(--softRedActive);
+}
+
+.day-expenses.active {
+  background-color: var(--cyan);
+}
+
+.day-expenses.active:hover {
+  background-color: var(--cyanActive);
+}
+
+#monday .day-expenses {
+  height: 50px;
+}
+
+#tuesday .day-expenses {
+  height: 100px;
+}
+
+#wednesday .day-expenses {
+  height: 150px;
+}
+
+#thursday .day-expenses {
+  height: 90px;
+}
+
+#friday .day-expenses {
+  height: 65px;
+}
+
+#saturday .day-expenses {
+  height: 125px;
+}
+
+#sunday .day-expenses {
+  height: 72px;
+}
+
+
+/* Media Queries */
+
+@media (max-width : 767px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .pd-40 {
+    padding: 25px;
+  }
+
+  .pb-40 {
+    padding-bottom: 25px;
+  }
+
+  .fs-small {
+    font-size: 12px;
+  }
+
+  .fs-large {
+    font-size: 24px
+  }
+
+  .fs-x-large {
+    font-size: 30px
+  }
+
+  .container {
+    width: 340px;
+  }
+
+  .day-expenses {
+    width: auto;
+  }
+
+  #expenses-chart {
+    -webkit-column-gap: 12px;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
+  }
+
+}
+
+@media (min-width : 768px) {
+
+  .container {
+    width: 540px;
+  }
+}
